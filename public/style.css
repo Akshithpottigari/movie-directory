@@ -176,30 +176,29 @@ body {
   margin-left: 56px;
 }
 
-#movie {
+.movie {
   margin-top: 720px;
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: 100px;
+  margin-left: 16px;
+  position: relative;
+  width: 292px;
+  height: 440px;
 }
 
 .movie-overlay {
   position: absolute;
-  left: 0px;
-  right: 0px;
-  top: 720px;
-  bottom: 0px;
+  top: 0;
+  left: 0;
+  width: 292px;
+  height: 440px;
 
   background: linear-gradient(
     180deg,
     rgba(29, 29, 29, 0) 0%,
     rgba(29, 29, 29, 0.8) 80.79%
   );
-  width: 292px;
-    height: 440px;
-    margin-left: 156px;
-  
 }
+
+
 
 .movie-image {
   height: 440px;
@@ -210,4 +209,36 @@ body {
   margin-right: 16px;
   margin-bottom: 16px;
   
+
+}
+
+.movie-title {
+  position: static;
+  width: 244px;
+  height: 32px;
+  margin-top: 360px;
+  margin-left: 24px;
+
+  /* Desktop/H4 */
+
+  font-family: Roboto;
+  font-style: normal;
+  text-align: justify;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height, or 133% */
+
+  /* Primary/White */
+
+  color: #ffffff;
+
+  /* Inside auto layout */
+
+  flex: none;
+  /* order: 2; */
+  align-self: stretch;
+  flex-grow: 0;
+  /* margin: 16px 0px; */
+  overflow: hidden;
 }

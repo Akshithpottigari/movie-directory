@@ -6,10 +6,7 @@ fetch("movies.json")
     for (let i = 0; i < data.length; i++) {
       // console.log(data[i].title)
       document.querySelector("#movie").innerHTML += `
-      <div class="movie-overlay"></div>
-      <div class="movie-image">
-                <img src="${data[i].posterurl}" alt="">
-            </div>
+      
         `;
     }
   });
