@@ -173,8 +173,11 @@ body {
 #movie-container {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 56px;
+  /* margin-left: 56px; */
+  justify-content: center;
 }
+
+
 
 .movie {
   margin-top: 720px;
@@ -182,7 +185,10 @@ body {
   position: relative;
   width: 292px;
   height: 440px;
+  background-repeat: no-repeat;
+  background-position: top;
 }
+
 
 .movie-overlay {
   position: absolute;
@@ -215,15 +221,13 @@ body {
 .movie-title {
   position: static;
   width: 244px;
-  height: 32px;
-  margin-top: 360px;
-  margin-left: 24px;
+  /* height: 32px; */
 
   /* Desktop/H4 */
 
   font-family: Roboto;
   font-style: normal;
-  text-align: justify;
+  /* text-align: justify; */
   font-weight: 500;
   font-size: 24px;
   line-height: 32px;
@@ -235,10 +239,16 @@ body {
 
   /* Inside auto layout */
 
-  flex: none;
-  /* order: 2; */
+  /* flex: none; */
   align-self: stretch;
-  flex-grow: 0;
+  flex-grow: 0; 
   /* margin: 16px 0px; */
-  overflow: hidden;
+  /* overflow: hidden; */
+  word-break: break-word;
+  margin-top: 360px;
+  /* padding-left: 24px; */
+}
+
+.text-wrapper{
+  text-align: -webkit-center;
 }
